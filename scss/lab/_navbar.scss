@@ -1,0 +1,41 @@
+
+.navbar-lab {
+  padding: 0 20px;
+  margin-bottom: 0;
+  background-color: #fff;
+  border-bottom-color: #fff;
+
+  a {
+    color: #000;
+  }
+
+  .container-fluid {
+    padding-left: 0;
+  }
+
+  .navbar-title {
+    font-weight: normal;
+    margin: 0;
+    font-size: 19px;
+    line-height: $navbar-height;
+  }
+
+  .navbar-nav {
+    > li {
+      > a {
+        &:hover,
+        &:active,
+        &:focus {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}
+
+.navbar-header {
+  .navbar-title {
+    font-weight: normal;
+    margin: 0;
+  }
+}

@@ -1,0 +1,25 @@
+
+// -----------------------------------------------------------------------------
+// Font Awesome
+$fa-font-path: '../fonts' !default;
+
+// -----------------------------------------------------------------------------
+// Bootstrap
+// (No !default here)
+$body-bg: #eee;
+
+// -----------------------------------------------------------------------------
+// Lab
+
+// Transitions
+$transition-duration: .3s;
+
+// Sidebar
+$sidebar-bg: #052B3C !default;
+$sidebar-color: #fff !default;
+$sidebar-link-color: #fff !default;
+
+$sidebar-header-height: $navbar-height + 1 !default;
+
+$sidebar-expanded-width: 230px !default;
+$sidebar-collapsed-width: 62px !default;
