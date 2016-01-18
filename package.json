@@ -8,9 +8,11 @@
     "type": "git",
     "url": "git://github.com/nirix/lab-twbs-theme"
   },
-  "devDependencies": {
+  "dependencies": {
     "bootstrap-sass": "^3.3.6",
-    "font-awesome": "^4.5.0",
+    "font-awesome": "^4.5.0"
+  },
+  "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-coffee": "^2.3.1",
     "gulp-cssnano": "^2.1.0",
