@@ -1,0 +1,24 @@
+
+@media (max-width: $screen-md-max) {
+  .navbar.navbar-sidebar-expanded {
+    margin-left: $sidebar-collapsed-width;
+  }
+
+  .page-with-sidebar {
+    &.page-sidebar-expanded {
+      @include sidebar-collapsed;
+    }
+
+    &.page-sidebar-collapsed {
+      @include sidebar-collapsed;
+    }
+
+    .sidebar-toggle {
+      display: none;
+    }
+
+    .content-wrapper {
+      padding: 0;
+    }
+  }
+}

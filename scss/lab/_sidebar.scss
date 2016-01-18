@@ -35,11 +35,15 @@
   }
 
   &.page-sidebar-expanded {
-    margin-left: $sidebar-expanded-width;
+    // margin-left: $sidebar-expanded-width;
+
+    @include sidebar-expanded;
   }
 
   &.page-sidebar-collapsed {
-    margin-left: $sidebar-collapsed-width;
+    // margin-left: $sidebar-collapsed-width;
+
+    @include sidebar-collapsed;
   }
 
   .sidebar-toggle a {
@@ -55,26 +59,26 @@
   }
 
   &.sidebar-expanded {
-    width: $sidebar-expanded-width;
+    // width: $sidebar-expanded-width;
 
     .nav-sidebar {
-      width: $sidebar-expanded-width;
+      // width: $sidebar-expanded-width;
     }
 
     .sidebar-toggle a {
-      width: $sidebar-expanded-width;
+      // width: $sidebar-expanded-width;
     }
   }
 
   &.sidebar-collapsed {
-    width: $sidebar-collapsed-width;
+    // width: $sidebar-collapsed-width;
 
     .nav-sidebar {
-      width: $sidebar-collapsed-width;
+      // width: $sidebar-collapsed-width;
     }
 
     .sidebar-toggle a {
-      width: $sidebar-collapsed-width;
+      // width: $sidebar-collapsed-width;
     }
   }
 
@@ -125,16 +129,16 @@
 
   &.sidebar-expanded {
     .sidebar-header {
-      width: $sidebar-expanded-width;
+      // width: $sidebar-expanded-width;
     }
   }
 
   &.sidebar-collapsed {
     .sidebar-header {
-      width: $sidebar-collapsed-width;
+      // width: $sidebar-collapsed-width;
 
       a {
-        padding-left: 16px;
+        // padding-left: 16px;
       }
     }
   }
@@ -173,7 +177,7 @@
 
   .sidebar-expanded & {
     > li {
-      width: $sidebar-expanded-width;
+      // width: $sidebar-expanded-width;
     }
   }
 
