@@ -14,13 +14,11 @@ var sassPaths = [
 var beSassy = function() {
     console.log('Being Sassy');
 
-    gulp.src([
-        './scss/lab.scss'
-    ])
-    .pipe(sourcemaps.init())
-    .pipe(sass({outputStyle: 'compressed', includePaths: sassPaths}).on('error', sass.logError))
-    .pipe(sourcemaps.write('./'))
-    .pipe(gulp.dest('assets/css'));
+    gulp.src(['./scss/lab.scss'])
+        .pipe(sourcemaps.init())
+        .pipe(sass({outputStyle: 'compressed', includePaths: sassPaths}).on('error', sass.logError))
+        .pipe(sourcemaps.write('./'))
+        .pipe(gulp.dest('assets/css'));
 }
 
 var makeCoffee = function() {
@@ -37,7 +35,6 @@ var makeCoffee = function() {
 gulp.task('compile', function(){
     beSassy();
     makeCoffee();
-    gulp.start('assets');
 });
 
 // Watch for changes
@@ -51,19 +48,3 @@ gulp.task('sass', beSassy);
 
 // Compile CoffeeScript
 gulp.task('coffee', makeCoffee);
-
-// JavaScripts
-gulp.task('assets', function() {
-    gulp.src([
-        'node_modules/jquery/dist/jquery.js',
-        'node_modules/bootstrap-sass/assets/javascripts/bootstrap.js'
-    ])
-    .pipe(sourcemaps.init())
-    .pipe(uglify())
-    .pipe(concat('js.js'))
-    .pipe(sourcemaps.write('./'))
-    .pipe(gulp.dest('assets/js'));
-
-    gulp.src(['node_modules/font-awesome/fonts/*'])
-        .pipe(gulp.dest('assets/fonts'));
-});
