@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="robots" content="noindex">
+
+		<title>Lab CSS Example</title>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/css/lab.min.css">
+
+		<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script src="assets/js/lab.min.js"></script>
+	</head>
+	<body>
+		<header class="navbar navbar-lab navbar-static-top navbar-sidebar-expanded">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<h1 class="navbar-title"><a href="#">Issues</a></h1>
+				</div>
+
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="#" title="Filters"><i class="fa fa-filter"></i> <span class="sr-only">Filters</span></a>
+						</li>
+						<li>
+							<a href="#" title="New Issue"><i class="fa fa-plus"></i> <span class="sr-only">New Issue</span></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<div class="page-with-sidebar page-sidebar-expanded">
+			<div class="sidebar-wrapper sidebar-expanded">
+				<div class="sidebar-header">
+					<a href="#">Lab</a>
+				</div>
+
+				<ul class="nav nav-sidebar">
+					<li>
+						<a href="#" title="Projects"><i class="fa fa-fw fa-home"></i> <span>Projects</span></a>
+					</li>
+					<li class="divider"></li>
+					<li>
+						<a href="#" title="Project Info"><i class="fa fa-fw fa-info"></i> <span>Project Info</span></a>
+					</li>
+					<li>
+						<a href="#" title="Timeline"><i class="fa fa-fw fa-history"></i> <span>Timeline</span></a>
+					</li>
+					<li>
+						<a href="#" title="Roadmap"><i class="fa fa-fw fa-map"></i> <span>Roadmap</span></a>
+					</li>
+					<li class="active">
+						<a href="#" title="Issues"><i class="fa fa-fw fa-exclamation-circle"></i> <span>Issues</span></a>
+					</li>
+					<!-- <li>
+						<a href="#" title="New Issue"><i class="fa fa-fw fa-bug"></i> <span>New Issue</span></a>
+					</li> -->
+					<li>
+						<a href="#" title="Changelog"><i class="fa fa-fw fa-list-ol"></i> <span>Changelog</span></a>
+					</li>
+					<li>
+						<a href="#" title="Wiki"><i class="fa fa-fw fa-paragraph"></i> <span>Wiki</span></a>
+					</li>
+					<li>
+						<a href="#" title="Settings"><i class="fa fa-fw fa-cogs"></i> <span>Settings</span></a>
+					</li>
+					<li class="divider"></li>
+					<li>
+						<a href="#" title="Profile"><i class="fa fa-fw fa-user"></i> <span>Profile</span></a>
+					</li>
+					<li>
+						<a href="#" title="UserCP"><i class="fa fa-fw fa-cog"></i> <span>UserCP</span></a>
+					</li>
+					<li>
+						<a href="#" title="Logout"><i class="fa fa-fw fa-sign-out"></i> <span>Logout</span></a>
+					</li>
+				</ul>
+
+				<div class="sidebar-toggle">
+					<a href="#"><i class="fa fa-angle-left"></i></a>
+				</div>
+			</div>
+
+			<main class="content-wrapper">
+				<div class="container-fluid container-limited">
+					<table class="table table-hover table-striped">
+						<thead>
+							<tr>
+								<th>ID</th>
+								<th>Summary</th>
+								<th>Reporter</th>
+								<th>Type</th>
+								<th>Status</th>
+								<th>Milestone</th>
+								<th>Component</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>142</td>
+								<td>Something is broken</td>
+								<td><a href="#">User1424</a></td>
+								<td>Defect</td>
+								<td>New</td>
+								<td><a href="#">1.0.1</a></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>126</td>
+								<td>Add this feature</td>
+								<td>Anonymous</td>
+								<td>Feature Request</td>
+								<td>Accepted</td>
+								<td><a href="#">1.1.0</a></td>
+								<td>Sidebar</td>
+							</tr>
+							<tr>
+								<td>104</td>
+								<td>More customisation</td>
+								<td>Anonymous</td>
+								<td>Feature Request</td>
+								<td>Started</td>
+								<td><a href="#">1.1.0</a></td>
+								<td>Core</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</main>
+		</div>
+	</body>
+</html>
