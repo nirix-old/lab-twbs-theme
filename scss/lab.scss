@@ -4,7 +4,9 @@
 @import 'lab/variables';
 
 // Font Awesome
-@import 'font-awesome/scss/font-awesome.scss';
+@if $fa-include {
+  @import 'font-awesome/scss/font-awesome.scss';
+}
 
 // Bootstrap
 @import 'lab/twbs';
