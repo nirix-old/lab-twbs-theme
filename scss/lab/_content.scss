@@ -1,19 +1,17 @@
 
 .content-wrapper {
-  padding: 20px;
 
   > .container-fluid {
     background: #fff;
     padding: 0;
-    margin-bottom: 20px;
+    margin: 0 auto 20px auto;
   }
 
   .content {
-    padding: 16px;
+    padding: $content-padding;
   }
 }
 
 .container-limited {
-  max-width: $screen-lg;
-  // padding: 16px;
+  max-width: $container-limited-width;
 }
