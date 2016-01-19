@@ -20,9 +20,13 @@ $container-limited-width: 1280px;
 $content-padding: 16px;
 
 // Sidebar
-$sidebar-bg: #052B3C !default;
-$sidebar-color: #fff !default;
-$sidebar-link-color: #fff !default;
+$sidebar-bg: $navbar-inverse-bg !default; //#052B3C
+$sidebar-color: $navbar-inverse-color !default;
+$sidebar-link-color: $navbar-inverse-link-color !default;
+$sidebar-link-hover-color: $navbar-inverse-link-hover-color !default;
+$sidebar-link-hover-bg: $navbar-inverse-link-hover-bg !default;
+$sidebar-link-active-color: $navbar-inverse-link-active-color !default;
+$sidebar-link-active-bg: $navbar-inverse-link-active-bg !default;
 
 $sidebar-header-height: $navbar-height + 1 !default;
 
