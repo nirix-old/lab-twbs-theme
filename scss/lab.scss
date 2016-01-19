@@ -18,8 +18,12 @@
  */
 
 @import 'lab/mixins';
+@import 'lab/alerts';
+@import 'lab/buttons';
+@import 'lab/content';
+@import 'lab/forms';
 @import 'lab/navbar';
 @import 'lab/sidebar';
-@import 'lab/content';
-@import 'lab/tables';
 @import 'lab/responsive_sidebar';
+@import 'lab/tables';
+@import 'lab/util';
