@@ -126,13 +126,13 @@
     }
   }
 
+  li a:active,
+  li a:focus,
   li a:hover {
     color: $sidebar-link-hover-color;
     background-color: $sidebar-link-hover-bg;
   }
 
-  li a:active,
-  li a:focus,
   li.active a {
     color: $sidebar-link-active-color;
     background-color: $sidebar-link-active-bg;
